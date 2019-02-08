@@ -1,0 +1,15 @@
+.code-switcher 
+    div[class*="language-"]::before
+        content ""
+
+    .tab-header
+        ul
+            padding 0
+
+        li
+            display inline-block
+            padding 0 10px
+            cursor pointer
+
+            &.active
+                font-weight bold
