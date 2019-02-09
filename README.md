@@ -1,6 +1,9 @@
 # vuepress-plugin-code-switcher
 Component that allows having synchronized language switchable code blocks (e.g. to switch between Java and Kotlin examples). Selected languages are persisted to local storage to have language selection be permanent across page requests.
 
+## Demo
+![](preview.gif)
+
 ## Installation
 ```
 $ npm install vuepress-plugin-code-switcher --save
