@@ -62,7 +62,9 @@ export default {
                 return this.selectedLanguage = value
             }
 
-            localStorage.setItem(this.localStorageKey, value)
+            if (process.isClient) {
+                localStorage.setItem(this.localStorageKey, value)
+            }
             this.root.$emit('change', { name: this.name, value })
         }
     },
@@ -70,8 +72,10 @@ export default {
     created () {
         if (this.isolated) return
 
-        let selected = localStorage.getItem(this.localStorageKey)
-        if (selected) this.selectedLanguage = selected
+        if (process.isClient) {
+            let selected = localStorage.getItem(this.localStorageKey)
+            if (selected) this.selectedLanguage = selected
+        }
 
         this.root.$on('change', ({ name, value }) => {
             if (name === this.name)
