@@ -62,7 +62,7 @@ export default {
                 return this.selectedLanguage = value
             }
 
-            if (process.isClient) {
+            if (typeof localStorage !== 'undefined') {
                 localStorage.setItem(this.localStorageKey, value)
             }
             this.root.$emit('change', { name: this.name, value })
@@ -72,7 +72,7 @@ export default {
     created () {
         if (this.isolated) return
 
-        if (process.isClient) {
+        if (typeof localStorage !== 'undefined') {
             let selected = localStorage.getItem(this.localStorageKey)
             if (selected) this.selectedLanguage = selected
         }
