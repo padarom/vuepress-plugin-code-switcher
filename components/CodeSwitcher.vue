@@ -74,7 +74,8 @@ export default {
 
         if (typeof localStorage !== 'undefined') {
             let selected = localStorage.getItem(this.localStorageKey)
-            if (selected) this.selectedLanguage = selected
+            if (selected && Object.keys(this.languages).indexOf(selected) !== -1)
+                this.selectedLanguage = selected
         }
 
         this.root.$on('change', ({ name, value }) => {
