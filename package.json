@@ -2,8 +2,8 @@
   "name": "vuepress-plugin-code-switcher",
   "author": {
     "name": "Christopher Mühl",
-    "email": "github@padarom.io",
-    "url": "https://padarom.io"
+    "email": "christopher@padarom.xyz",
+    "url": "https://padarom.xyz"
   },
   "repository": {
     "type": "git",
@@ -13,6 +13,6 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@vuepress/plugin-register-components": "^1.0.0-alpha.0"
+    "@vuepress/plugin-register-components": "^1.8.0"
   }
 }

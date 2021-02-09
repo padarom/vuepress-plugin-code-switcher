@@ -4,8 +4,9 @@ Component that allows having synchronized language switchable code blocks (e.g. 
 _Requires Vuepress 1.0+_
 
 ## Demo
-![](preview.gif)
+A live demo is available at https://code-switcher.padarom.xyz.
 
+![](preview.gif)
 ## Installation
 ```
 $ npm install vuepress-plugin-code-switcher --save

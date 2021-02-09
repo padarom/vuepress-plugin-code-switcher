@@ -1,0 +1,13 @@
+{
+  "name": "vuepress-plugin-code-switcher-test",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "dependencies": {
+    "vuepress-plugin-code-switcher": "file://.."
+  },
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
