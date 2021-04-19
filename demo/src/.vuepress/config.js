@@ -9,6 +9,15 @@ module.exports = {
   },
 
   plugins: [
-    'code-switcher',
+    [
+      'code-switcher',
+      {
+        groups: {
+          synchronized: { julia: 'Julia', kotlin: 'Kotlin', perl: 'Perl' },
+          'group-1': { nim: 'Nim', ocaml: 'OCaml' },
+          'group-2': { nim: 'Nim', ocaml: 'OCaml' },
+        },
+      },
+    ],
   ]
 }

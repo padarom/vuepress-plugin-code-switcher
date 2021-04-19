@@ -19,7 +19,7 @@ to be made.
 
 ### Longest Common Substring
 
-<CodeSwitcher :languages="{julia:'Julia',kotlin:'Kotlin',perl:'Perl'}">
+<CodeSwitcher name="synchronized">
 <template v-slot:julia>
 
 ```julia
@@ -107,7 +107,7 @@ print "The longest common substring of <thisisatest> and <testing123testing> is 
 
 ### Palindrome Detection
 
-<CodeSwitcher :languages="{julia:'Julia',kotlin:'Kotlin',perl:'Perl'}">
+<CodeSwitcher name="synchronized">
 <template v-slot:julia>
 
 ```julia
@@ -276,7 +276,7 @@ switch, while the others stay the same.
 
 ### Group 1: FizzBuzz
 
-<CodeSwitcher :languages="{nim:'Nim',ocaml:'OCaml'}" name="group-1">
+<CodeSwitcher name="group-1">
 <template v-slot:nim>
 
 ```nim
@@ -311,7 +311,7 @@ let _ =
 
 ### Group 1: Hello world
 
-<CodeSwitcher :languages="{nim:'Nim',ocaml:'OCaml'}" name="group-1">
+<CodeSwitcher name="group-1">
 <template v-slot:nim>
 
 ```nim
@@ -330,7 +330,7 @@ print_endline "Hello world!"
 
 ### Group 2: String case
 
-<CodeSwitcher :languages="{nim:'Nim',ocaml:'OCaml'}" name="group-2">
+<CodeSwitcher name="group-2">
 <template v-slot:nim>
 
 ```nim
@@ -361,7 +361,7 @@ let () =
 
 ### Group 2: Strip whitespace
 
-<CodeSwitcher :languages="{nim:'Nim',ocaml:'OCaml'}" name="group-2">
+<CodeSwitcher name="group-2">
 <template v-slot:nim>
 
 ```nim
