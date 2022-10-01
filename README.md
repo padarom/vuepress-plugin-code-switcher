@@ -1,15 +1,22 @@
 # vuepress-plugin-code-switcher
 Component that allows having synchronized language switchable code blocks (e.g. to switch between Java and Kotlin examples). Selected languages are persisted to local storage to have language selection be permanent across page requests.
 
-_Requires Vuepress 1.0+_
+This plugin supports both Vuepress 1 and 2. Since Vuepress 1 plugins are incompatible with Vuepress 2 I try to maintain the plugin for both Vuepress versions. Those plugin versions can be seen in different GitHub branches as shown below.
+
+| | Vuepress 1 | Vuepress 2 |
+| -- | --- | --- |
+| npm | Versions `1.x.x` | Versions `2.x.x` |
+| GitHub | [`vuepress-1` Branch](https://github.com/padarom/vuepress-plugin-code-switcher/tree/vuepress-1) | [`main` Branch](https://github.com/padarom/vuepress-plugin-code-switcher/tree/main) |
 
 ## Demo
 A live demo is available at https://code-switcher.padarom.xyz.
 
 ![](preview.gif)
 ## Installation
+**These instructions are only valid for Vuepress 1. If you use Vuepress 2, see [here](https://github.com/padarom/vuepress-plugin-code-switcher/blob/main/README.md#installation).**
+
 ```
-$ npm install vuepress-plugin-code-switcher --save
+$ npm install vuepress-plugin-code-switcher@~1.0 --save
 ```
 
 After installing, add it to your Vuepress configuration's plugin list:
