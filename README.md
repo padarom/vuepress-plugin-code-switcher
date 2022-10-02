@@ -72,6 +72,11 @@ export default {
                 default: { ts: 'TypeScript', js: 'JavaScript' },
                 jvm: { java: 'Java', kotlin: 'Kotlin', jruby: 'JRuby' },
             },
+
+            // You can also specify a custom name for the code switcher component.
+            // If chaning the name like so, you then use the component as <CustomCodeSwitcher>
+            // in your markdown code
+            componentName: 'CustomCodeSwitcher',
         })
     ],
 }
