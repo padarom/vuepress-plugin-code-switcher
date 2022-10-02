@@ -12,11 +12,11 @@ jobs:
       - name: Checkout Git repository
         uses: actions/checkout@v2
       
-      - name: Install plugin dependencies
-        run: npm install
+      - name: Install dependencies
+        run: npm install && cd demo && npm install
       
-      - name: Build and link the plugin
-        run: npm run build && npm link
+      - name: Build the plugin
+        run: npm run build
 
       - name: Build and Deploy
         uses: jenkey2011/vuepress-deploy@master
@@ -27,5 +27,5 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           CNAME: code-switcher.padarom.xyz
           TARGET_BRANCH: gh-pages
-          BUILD_SCRIPT: npm run build --workspace @vuepress-plugin-code-switcher/demo
-          BUILD_DIR: src/.vuepress/dist
+          BUILD_SCRIPT: npm run build:demo
+          BUILD_DIR: demo/src/.vuepress/dist

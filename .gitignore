@@ -1,6 +1,5 @@
 node_modules
 yarn.lock
-package-lock.json
 demo/src/.vuepress/dist
 demo/src/.vuepress/.cache
 demo/src/.vuepress/.temp

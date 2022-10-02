@@ -12,6 +12,7 @@
   },
   "scripts": {
     "build": "tsc -b tsconfig.build.json && cpx \"src/**/*.{d.ts,vue,scss}\" lib",
+    "build:demo": "npm run build --workspace @vuepress-plugin-code-switcher/demo",
     "dev": "npm run dev --workspace @vuepress-plugin-code-switcher/demo"
   },
   "workspaces": ["./demo"],
