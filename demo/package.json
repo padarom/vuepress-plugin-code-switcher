@@ -1,13 +1,11 @@
 {
-  "name": "vuepress-plugin-code-switcher-test",
+  "name": "@vuepress-plugin-code-switcher/demo",
+  "private": true,
   "scripts": {
     "dev": "vuepress dev src",
     "build": "vuepress build src"
   },
-  "dependencies": {
-    "vuepress-plugin-code-switcher": "file://.."
-  },
   "devDependencies": {
-    "vuepress": "^1.5.3"
+    "vuepress": "^2.0.0-beta.51"
   }
 }
