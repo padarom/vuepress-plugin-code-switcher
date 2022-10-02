@@ -13,18 +13,20 @@ A live demo is available at https://code-switcher.padarom.xyz.
 
 ![](preview.gif)
 ## Installation
-**These instructions are only valid for Vuepress 1. If you use Vuepress 2, see [here](https://github.com/padarom/vuepress-plugin-code-switcher/blob/main/README.md#installation).**
+**These instructions are only valid for Vuepress 2. If you use Vuepress 1, see [here](https://github.com/padarom/vuepress-plugin-code-switcher/blob/vuepress-1/README.md#installation).**
 
 ```
-$ npm install vuepress-plugin-code-switcher@~1.0 --save
+$ npm install vuepress-plugin-code-switcher@~2.0 --save
 ```
 
 After installing, add it to your Vuepress configuration's plugin list:
 
-```js
-module.exports = {
+```ts
+import { codeSwitcherPlugin } from 'vuepress-plugin-code-switcher'
+
+export default {
     // Your remaining configuration ...
-    plugins: [ 'code-switcher' ],
+    plugins: [ codeSwitcherPlugins(/* your config options go here */) ],
 }
 ```
 
@@ -60,18 +62,17 @@ specify your languages every single time. Therefore you can instantiate the
 plugin with options and name the default languages for a given group:
 
 ```js
-module.exports = {
+import { codeSwitcherPlugin } from 'vuepress-plugin-code-switcher'
+
+export default {
     // Your remaining configuration ...
     plugins: [
-        [
-            'code-switcher',
-            {
-                groups: {
-                    default: { ts: 'TypeScript', js: 'JavaScript' },
-                    jvm: { java: 'Java', kotlin: 'Kotlin', jruby: 'JRuby' },
-                },
+        codeSwitcherPlugins({
+            groups: {
+                default: { ts: 'TypeScript', js: 'JavaScript' },
+                jvm: { java: 'Java', kotlin: 'Kotlin', jruby: 'JRuby' },
             },
-        ],
+        })
     ],
 }
 ```
