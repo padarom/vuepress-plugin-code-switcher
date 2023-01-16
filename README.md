@@ -26,7 +26,7 @@ import { codeSwitcherPlugin } from 'vuepress-plugin-code-switcher'
 
 export default {
     // Your remaining configuration ...
-    plugins: [ codeSwitcherPlugins(/* your config options go here */) ],
+    plugins: [ codeSwitcherPlugin(/* your config options go here */) ],
 }
 ```
 
