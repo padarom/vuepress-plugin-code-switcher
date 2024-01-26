@@ -122,6 +122,7 @@ export const CodeSwitcher = defineComponent({
               {
                 class: 'tab-content',
                 key: shorthand,
+                style: { display: $slots[shorthand] ? 'block' : 'none' },
               },
               ($slots[shorthand] || slotNotFound)({ shorthand })
             ),
